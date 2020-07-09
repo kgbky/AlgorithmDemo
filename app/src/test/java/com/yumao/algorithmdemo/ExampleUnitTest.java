@@ -15,7 +15,11 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
-        int[] array = new AlgorithmTest().b();
-        System.out.println(Arrays.toString(array));
+        AlgorithmTest test = new AlgorithmTest();
+        test.quickSort(0, 7);
+        test.printlnArray();
+
+        int a = test.quickSelect(1, 0, 7);
+        System.out.println(a);
     }
 }
